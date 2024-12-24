@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Thời Khóa Biểu</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+    <style>
+        /* Cấu trúc chung và cài đặt nền */
+        body {
+            font-family: 'Poppins', sans-serif;
+            display: flex;
+            justify-content: center;
+            margin: 0;
+            padding: 20px;
+            background: linear-gradient(135deg, #f6d365 0%, #fda085 100%);
+            color: #333;
+        }
+        /* Container chứa bảng */
+        .schedule-container {
+            width: 1200px;
+            background: #fff;
+            border: 2px solid #ff866b;
+            padding: 20px;
+            box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.3);
+            border-radius: 12px;
+        }
+        /* Header của bảng */
+        .schedule-header {
+            text-align: center;
+            font-weight: bold;
+            font-size: 2.5em;
+            padding: 10px 0;
+            background: linear-gradient(90deg, #ff9a8b, #ff6a88, #ff99ac);
+            color: #fff;
+            border-radius: 10px;
+            box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+            text-shadow: 0px 2px 4px rgba(0, 0, 0, 0.2);
+        }
+        /* Cấu trúc bảng */
+        .schedule-table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 20px;
+        }
+        /* Định dạng chung cho ô và tiêu đề */
+        .schedule-table th, .schedule-table td {
+            border: 2px solid #ff866b;
+            padding: 10px;
+            text-align: center;
+            font-size: 1.3em;
+            transition: background-color 0.3s ease;
+        }
+        /* Màu nền cho ô tiêu đề */
+        .schedule-table th {
+            background: linear-gradient(135deg, #a8e6cf, #e0f7e4);
+            color: #333;
+            font-weight: 600;
+        }
+        /* Màu nền cho hàng chẵn */
+        .schedule-table tr:nth-child(even) {
+            background-color: #ffe8cc;
+        }
+        /* Màu nền khi di chuột qua */
+        .schedule-table tr:hover td {
+            background-color: #ffcccb;
+        }
+        /* Hàng ngăn cách các tiết học */
+        .schedule-table .divider-row td {
+            background-color: transparent;
+            border: none;
+            height: 10px;
+        }
+    </style>
+</head>
+<body>
+    <div class="schedule-container">
+        <!-- Hàng cho ô thời khóa biểu -->
+        <div class="schedule-header">Thời Khóa Biểu</div>
+        <table class="schedule-table">
+            <!-- Hàng tiêu đề -->
+            <tr>
+                <th>Thời gian</th>
+                <th>Thứ 2</th>
+                <th>Thứ 3</th>
+                <th>Thứ 4</th>
+                <th>Thứ 5</th>
+                <th>Thứ 6</th>
+            </tr>
+            <!-- Nội dung các tiết học buổi sáng -->
+            <tr>
+                <td>7:15 - 8:00</td>
+                <td>HĐTN</td>
+                <td>Hóa</td>
+                <td>Toán</td>
+                <td>Văn</td>
+                <td>Tin</td>
+            </tr>
+            <tr>
+                <td>8:20 - 9:05</td>
+                <td>HĐTN</td>
+                <td>Sử</td>
+                <td>Anh</td>
+                <td>Văn</td>
+                <td>Sử</td>
+            </tr>
+            <tr>
+                <td>9:10 - 9:55</td>
+                <td>Anh</td>
+                <td>Lý</td>
+                <td>Anh</td>
+                <td>Toán</td>
+                <td>Địa</td>
+            </tr>
+            <tr>
+                <td>10:05 - 10:50</td>
+                <td>Lý</td>
+                <td>Tin</td>
+                <td>Địa</td>
+                <td>Hóa</td>
+                <td>Toán</td>
+            </tr>
+            <tr>
+                <td>10:55 - 11:40</td>
+                <td>Lý</td>
+                <td>GDDP</td>
+                <td>Văn</td>
+                <td>Hóa</td>
+                <td>Toán</td>
+            </tr>
+            <!-- Hàng ngăn cách giữa buổi sáng và chiều -->
+            <tr class="divider-row"><td colspan="6"></td></tr>
+            <!-- Nội dung các tiết học buổi chiều -->
+            <tr>
+                <td>1:30 - 2:15</td>
+                <td>Anh</td>
+                <td>Toán</td>
+                <td></td>
+                <td></td>
+                <td>Lý</td>
+            </tr>
+            <tr>
+                <td>2:20 - 3:05</td>
+                <td>Anh</td>
+                <td>Toán</td>
+                <td></td>
+                <td></td>
+                <td>Lý</td>
+            </tr>
+            <tr>
+                <td>3:15 - 4:00</td>
+                <td>Toán</td>
+                <td>TD</td>
+                <td></td>
+                <td></td>
+                <td>Văn</td>
+            </tr>
+            <tr>
+                <td>4:05 - 4:50</td>
+                <td>Toán</td>
+                <td>TD</td>
+                <td></td>
+                <td></td>
+                <td>QP</td>
+            </tr>
+        </table>
+    </div>
+</body>
+</html>
