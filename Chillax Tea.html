@@ -1,0 +1,316 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chillax Tea</title>
+    <link rel="icon" href="https://img.freepik.com/premium-vector/bubble-tea-drink-logo-vector_25327-323.jpg" type="image/jpg">
+    <style>
+        /* General Styles */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f9f9f9;
+            scroll-behavior: smooth;
+        }
+
+        h1, h2, h3 {
+            margin: 0;
+        }
+
+        a {
+            text-decoration: none;
+            color: inherit;
+        }
+
+        /* Intro Section */
+        .intro {
+            gap: 60px;
+	    display: flex;
+            align-items: center;
+	    justify-content: center;
+            padding: 50px;
+            background-color: #fff;
+        }
+
+        .intro .content h1 {
+            color: #e00;
+            font-size: 55px;
+            margin-bottom: 20px;
+        }
+
+        .intro .content p {
+            font-size: 22px;
+            color: #333;
+            line-height: 1.6;
+        }
+
+        .intro .image img {
+            width: 450px;
+            margin-left: 50px;
+        }
+
+        /* Section Styles */
+        .section {
+            text-align: center;
+            padding: 50px 20px;
+        }
+
+        .section h2 {
+            color: #e00;
+            margin-bottom: 20px;
+            font-size: 32px;	
+        }
+
+        .section .line {
+            width: 50px;
+            height: 3px;
+            background-color: #e00;
+            margin: 10px auto;
+        }
+
+        .section .product-list {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 20px;
+            margin-top: 30px;
+        }
+
+        .section .product {
+            width: 240px;
+            background-color: #fff;
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            padding: 20px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+            text-align: center;
+        }
+
+        .section .product img {
+            width: 100%;
+            border-radius: 8px;
+        }
+
+        .section .product h3 {
+            margin: 15px 0 5px;
+            font-size: 19px;
+            color: #333;
+        }
+
+        .section .product .stars {
+            margin: 5px 0;
+            color: #f39c12;
+            font-size: 18px;
+        }
+
+        .section .product p {
+            margin: 0;
+            color: #e00;
+            font-weight: bold;
+            font-size: 18px;
+        }
+
+        /* Customer Review */
+        .review-section {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 40px;
+            padding: 50px 20px;
+            background-color: #fff;
+        }
+
+        .review-section img {
+            width: 180px;
+            height: 180px;
+            border-radius: 50%;
+            object-fit: cover;
+        }
+
+        .review-section .review-content {
+            text-align: left;
+            max-width: 600px;
+            font-size: 18px;
+        }
+
+        .review-section .review-content h3 {
+            margin-bottom: 15px;
+            font-size: 26px;
+        }
+
+        .review-section .review-content .stars {
+            color:   #FF8C00;
+            margin-bottom: 10px;
+            font-size: 24px;
+        }
+
+        .review-section .review-content p {
+            margin: 0;
+            font-style: italic;
+            font-size: 21px;
+        }
+
+        /* Scroll to Top Button */
+        .scroll-to-top {
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            background-color: #e00;
+            color: #fff;
+            width: 60px;
+            height: 60px;
+            border-radius: 10px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 21px;
+            cursor: pointer;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+            transition: opacity 0.3s;
+	    text-align: center;
+        }
+
+        .scroll-to-top:hover {
+            background-color: #b00;
+        }
+
+        .scroll-to-top.hidden {
+            opacity: 0;
+            pointer-events: none;
+        }
+
+        /* Footer */
+        footer {
+            text-align: center;
+            padding: 20px;
+            background-color: #333;
+            color: #fff;
+            font-size: 16px;
+        }
+        footer span {
+            color: #fff; /* Màu chữ ban đầu */
+            text-decoration: none;
+        }
+
+        footer span:hover {
+            color: #e00; /* Màu khi di chuột vào văn bản */
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Intro Section -->
+    <section class="intro">
+        <div class="content">
+            <h1>Chillax Tea</h1>
+            <p>
+	Hãy đến và thưởng thức trà sữa trong không gian thật chill, nơi mỗi ngụm đều mang đến sự thư giãn và cảm giác thoải mái tuyệt vời 😊
+            </p>
+        </div>
+        <div class="image">
+            <img src="https://img.freepik.com/premium-vector/bubble-tea-drink-logo-vector_25327-323.jpg" alt="Chillax Logo">
+        </div>
+    </section>
+
+    <!-- Ice Cream Section -->
+    <section class="section">
+	<h2>Kem Chill</h2> 
+        <div class="line"></div>
+        <div class="product-list">
+            <div class="product">
+                <img src="https://mixueviet.com/wp-content/uploads/2024/05/Super-Sundae-Socola-Mixue-300x300.jpg" alt="Super Sundae Socola">
+                <h3>Super Sundae Socola</h3>
+                <div class="stars">★★★★★</div>
+                <p>25.000đ</p>
+            </div>
+            <div class="product">
+                <img src="https://mixueviet.com/wp-content/uploads/2024/05/Sua-Kem-Lac-Dau-Tay-Mixue-300x300.jpg" alt="Sữa kem lắc dâu tây">
+                <h3>Sữa Kem Lắc Dâu Tây</h3>
+                <div class="stars">★★★★☆</div>
+                <p>25.000đ</p>
+            </div>
+            <div class="product">
+                <img src="https://mixueviet.com/wp-content/uploads/2024/05/Super-Sundae-Tran-Chau-Duong-Den-Mixue-300x300.jpg" alt="Super Sundae Trân Châu Đường Đen">
+                <h3>Super Sundae Trân Châu Đường Đen</h3>
+                <div class="stars">★★★★★</div>
+                <p>25.000đ</p>
+            </div>
+            <div class="product">
+                <img src="https://mixueviet.com/wp-content/uploads/2024/05/Hong-Tra-Kem-Mixue-300x300.jpg" alt="Hồng Trà Kem">
+                <h3>Hồng Trà Kem</h3>
+                <div class="stars">★★★★☆</div>
+                <p>25.000đ</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Milk Tea Section -->
+    <section class="section">
+        <h2>Trà Sữa Chill</h2>
+        <div class="line"></div>
+        <div class="product-list">
+            <div class="product">
+                <img src="https://mixueviet.com/wp-content/uploads/2024/05/Tra-Sua-3Q-Mixue-300x300.jpg" alt="Trà sữa 3Q">
+                <h3>Trà Sữa 3Q</h3>
+                <div class="stars">★★★★☆</div>
+                <p>25.000đ</p>
+            </div>
+            <div class="product">
+                <img src="https://mixueviet.com/wp-content/uploads/2024/06/Tra-sua-Duong-Chi-Cam-Lo-Mixue-300x300.jpg" alt="Dương chi cam lộ">
+                <h3>Dương Chi Cam Lộ</h3>
+                <div class="stars">★★★★★</div>
+                <p>35.000đ</p>
+            </div>
+            <div class="product">
+                <img src="https://mixueviet.com/wp-content/uploads/2024/05/Tra-Sua-Thach-Dua-Mixue-300x300.jpg" alt="Trà sữa thạch dừa">
+                <h3>Trà Sữa Thạch Dừa</h3>
+                <div class="stars">★★★★☆</div>
+                <p>25.000đ</p>
+            </div>
+            <div class="product">
+                <img src="https://mixueviet.com/wp-content/uploads/2024/05/Tra-Sua-Ba-Vuong-Mixue-300x300.jpg" alt="Trà sữa bá vương">
+                <h3>Trà Sữa Bá Vương</h3>
+                <div class="stars">★★★★★</div>
+                <p>30.000đ</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Customer Review Section -->
+    <section class="review-section">
+        <img src="https://th.bing.com/th/id/R.c10e4787b6b971e9484f41f973337502?rik=np1%2bGEwnkeTk1w&pid=ImgRaw&r=0" alt="Khách hàng">
+        <div class="review-content">
+            <h3>Mountain Vũ</h3>
+            <div class="stars">★★★★★★</div>
+            <p>"Trà sữa ở Chillax Tea thực sự ngon mà giá cả thì rất là phải chăng. Là người con xa xứ mình vô cùng tự hào vì Việt Nam ta có thương hiệu trà sữa tuyệt vời như thế!"</p>
+        </div>
+    </section>
+
+    <!-- Scroll to Top Button -->
+    <div class="scroll-to-top hidden" id="scrollToTopBtn">Λ</div>
+
+    <!-- Footer -->
+    <footer>
+	<a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ" target="_blank"><span>Copyright © 2024 | Hoàng Sơn :3</span></a>
+    </footer>
+
+    <script>
+        const scrollToTopBtn = document.getElementById('scrollToTopBtn');
+
+        window.addEventListener('scroll', () => {
+            if (window.scrollY > 200) {
+                scrollToTopBtn.classList.remove('hidden');
+            } else {
+                scrollToTopBtn.classList.add('hidden');
+            }
+        });
+
+        scrollToTopBtn.addEventListener('click', () => {
+            window.scrollTo({ top: 0, behavior: 'smooth' });
+        });
+    </script>
+
+</body>
+</html>
